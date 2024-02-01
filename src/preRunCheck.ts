@@ -13,7 +13,7 @@ void (async () => {
       await checkBalance()
       console.log(chalk.green('OKAY'))
       console.log(`no issues. please run ${chalk.green('npm run prod')} to register the node key.`)
-      process.exit(1)
+      process.exit(0)
 
    } catch (e) {
       console.error(e)

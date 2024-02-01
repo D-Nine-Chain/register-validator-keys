@@ -10,7 +10,7 @@ void (async () => {
       const publicKeys = getPublicKeys(keyFiles);
       console.log("public keys", publicKeys)
       await registerKeys(publicKeys)
-      process.exit(1);
+      process.exit(0);
    }
    catch (e: any) {
       console.error(e);
