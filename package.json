@@ -1,0 +1,19 @@
+{
+   "devDependencies": {
+      "typescript": "^5.3.3"
+   },
+   "dependencies": {
+      "@polkadot/api": "^10.11.2",
+      "@polkadot/keyring": "^12.6.2",
+      "@polkadot/types": "^10.11.2",
+      "@polkadot/util-crypto": "^12.6.2",
+      "chalk": "^4.1.2",
+      "dotenv": "^16.4.1",
+      "ts-node": "^10.9.2"
+   },
+   "scripts": {
+      "dev": "npx ts-node src/index.ts",
+      "check": "npx ts-node src/preRunCheck.ts",
+      "prod": "npx tsc  && node dist/index.js"
+   }
+}
